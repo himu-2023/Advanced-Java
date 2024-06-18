@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		 <!-- eager loading -->
+ 	<bean class="example.spring.core.BeanImpl" id="myBean"/>
+ 	<!-- lazy loading -->
+ 	<bean class="example.spring.core.BeanImpl" id="myBean2" lazy-init="true"/>
+ 	<!-- singletone -->
+ 	<bean class="example.spring.core.BeanImpl" id="myBean3" lazy-init="true"/>
+ 	<!-- prototype -->
+ 	<bean class="example.spring.core.BeanImpl" id="myBean4" lazy-init="true" scope="prototype"/>
+</beans>
